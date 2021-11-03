@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Minecraft Storage Base
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "James"
+  },
+  "headline": "Minecraft Storage Base",
+  "datePublished": "2021-11-03",
+  "image": "https://i.pinimg.com/originals/a7/9d/df/a79ddf45e93bfde36b27e9af9b9334f7.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Shuriken MOD",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=minecraft+storage+base",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code --></head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Minecraft Storage Base
+            </a>
+        </h1>
+        <p>
+                            Best Wallpaper Ideas website. Search anything about Wallpaper Ideas in this website.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Minecraft Storage Base</strong>. Tweaked computers and turtles to a Refined Storage or Applied Energistics 2 storage system respectively either directly or via a wired modem. Expanding Minecraft Thermally.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/736x/c7/82/23/c7822339fa7a1ae1c2c4a030a388b923.jpg" alt="A Simple Storage Room Minecraft Houses Minecraft Room Minecraft Cottage" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKbboLseu-9FfA49BiZgkYDtE5soWTwzn4bIWN9Z7zgXJ_aV3ldCJZxH-uUgye4AjJzyI';">
+        <figcaption>A Simple Storage Room Minecraft Houses Minecraft Room Minecraft Cottage from www.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Added the stone_crafting_materials item tag. Posted by 7 minutes ago. Log In Sign Up.
+    </p>
+    <h3>Please sign up with our newsletter to get weekly new objects fresh ideas building tips and articles about the Minecraft world.</h3>
+    <p>SEE ALL OUR BLUEPRINTS AND 3D MODELS. These peripherals allow you to perform queries about the contents. Below youll find 24 amazing Minecraft building ideas to inspire you ranging from small practical builds such as bridges and storage rooms to massive aesthetic projects like castles towns and skyscrapers. Added the candles ignored_by_piglin_babies and.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pics Of Your Storage Room Survival Mode Minecraft Discussion Minecraft Forum Minecraft Forum Minecraft Storage Minecraft Underground Minecraft Room" src="https://i.pinimg.com/originals/ae/dc/ef/aedcef36b04244a8f54ed95f4bc451e8.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUnFCcK0I-nlYc5fKd6vSDpC-GsDIxMOFbPAMZP7WMBhs7YzeRAOAlBLZmP03rUYs0jjA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Here you will find a great list of the most popular and.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin On Minecraft" src="https://i.pinimg.com/originals/1b/1e/c7/1b1ec760dce62c9c7383170bad4254e7.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2qA63hq8kiXx2GO8n6j7zx5uQBYSplbsAU8_hdyahXc5vTmGHOFhVTvQ7dAkrBVemM98';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Pages in category Storage The following 19 pages are in this category out of 19 total.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Underground Base Minecraft Underground Underground Minecraft" src="https://i.pinimg.com/736x/53/81/61/538161c0b1f3884d7608bad80f93089b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfNf6hkaqibDvp770oc5oj6UGAMuzuZrzUt0Xd4mgcot4WLMM_BjgoSovhUFOjX0TbC7I';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>They do however have user interfaces which can be used to see the specific number of items stored in.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Minecraft Underground Base Ideas Minecraft Underground Base Minecraft Underwater Minecraft Underground Minecraft Underwater House" src="https://i.pinimg.com/originals/a7/9d/df/a79ddf45e93bfde36b27e9af9b9334f7.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnpR6bRiuje-fUwwtFDNvpbw-3_T6zyVt2IiYU6RG8UY0uNJXnmjRmW_EqZ9xpuHZaImU';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Added the base_stone_nether and base_stone_overworld block tags.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Sourceblock Episode 18 New Underground Storage Minecraft 1 14 Sur Minecraft Underground Minecraft Minecraft Designs" src="https://i.pinimg.com/originals/f0/4a/16/f04a16d1be64a29c628d4662f59fbfff.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjThFE2aJZhKAb-qTW-q_vec5cVnXYgZa559Cc0SQ7fc5_LiRjpsCqkvyPUHU6LUGpJRo';" />
+        <small>Source: es.pinterest.com</small>
+                    <p>Storage devices in the mod use in-world interactions in order to add and remove items from their inventory.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Storage Room Design Minecraft Storage Room Minecraft Underground Minecraft Storage" src="https://i.pinimg.com/736x/8c/2c/ff/8c2cff74031ea50501b41502dbdee493--boys-room-design-storage-room.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZnB6yAtTwqPTSeF76G0NadVU7bGt5mutqx8__HCZKgYzR8861_5LF_dZMDBDyaj_6zA0';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Here you can download the game with a ready set of mods textures and shaders optimized for your system.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="A Simple Storage Room Minecraft Houses Minecraft Room Minecraft Cottage" src="https://i.pinimg.com/736x/c7/82/23/c7822339fa7a1ae1c2c4a030a388b923.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKbboLseu-9FfA49BiZgkYDtE5soWTwzn4bIWN9Z7zgXJ_aV3ldCJZxH-uUgye4AjJzyI';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Our database currently keeps more than 6000 objects in our database.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Underground Minecraft Circle Base Minecraft Circles Minecraft Houses Minecraft" src="https://i.pinimg.com/originals/8b/c8/81/8bc88127c47fb18862719a999ac25ef9.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZDqdqyC0yAzjC0Nvw9caRYi3w0elgrVR5YL9FbZTAQhn7_v0F2ozaOt1ArQhJSJRMCBs';" />
+        <small>Source: nl.pinterest.com</small>
+                    <p>Storage devices in the mod use in-world interactions in order to add and remove items from their inventory.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="House Base Designs Minecraft Interior Design Minecraft Storage Room Minecraft Floor Designs" src="https://i.pinimg.com/736x/f3/c9/24/f3c9246a1ef9a8b6dfddaa45c913becb--the-beast-minecraft.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqNTuqCwYqRxqmA1HKF9Kj6omptdh1e2U3GPUKJ0-nX7S4WYURnr_jaq3FpJbK-jfuFRs';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Added the candle_cakes candles cauldrons and crystal_sound_blocks block tags.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/avengers-drawing-ideas-easy.html"><i>&larr; avengers drawing ideas easy</i></a>
+                                                                    
+                                        <a href="/2003-lincoln-town-car-tire-size.html"><i>2003 lincoln town car tire size &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <!-- Footer CSS JS -->            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

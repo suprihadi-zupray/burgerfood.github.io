@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Pool Service Routing Software
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "James"
+  },
+  "headline": "Pool Service Routing Software",
+  "datePublished": "2021-11-03",
+  "image": "https://gdm-catalog-fmapi-prod.imgix.net/ProductLogo/8280719f-9376-49b1-b85e-fd6eaae0a83d.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Shuriken MOD",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=pool+service+routing+software",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code --></head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Pool Service Routing Software
+            </a>
+        </h1>
+        <p>
+                            Best Wallpaper Ideas website. Search anything about Wallpaper Ideas in this website.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Pool Service Routing Software</strong>. The software features all the reporting tools you need to run your pool service company efficiently. Pool Service Software That Changes Everything.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://images.tech.co/wp-content/uploads/2018/09/06153642/the-service-program-scheduling-640x352.jpg" alt="Top 10 Best Pool Service Software Providers 2021 Tech Co" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFdzEpVrmSfH-1ccdNXCggUsjAaY2jtbffHO-TC_AfQc06Pgm2MsRy69SWWc9Xgm5QLwA';">
+        <figcaption>Top 10 Best Pool Service Software Providers 2021 Tech Co from tech.co</figcaption>
+    </figure>
+        <p>
+        Automate operations with our single point of sale software. PoolTrac has made a splash in the pool service software market with its tailored solution. Organize the days schedule record chemical and equipment use and track your fleet all.
+    </p>
+    <h3>The software features all the reporting tools you need to run your pool service company efficiently.</h3>
+    <p>PoolTrac has made a splash in the pool service software market with its tailored solution. Escape from beneath the endless heaps of printed work orders and schedules your pool and spa service company generates. Our pool route management software has the most innovative GPS tracking system. 1-Click find the 5 closet pools for the most optimal routes.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Top 10 Best Pool Service Software Providers 2021 Tech Co" src="https://images.tech.co/wp-content/uploads/2019/08/01161939/jobs-Verizon-Dispatch-field-service-software-mobile.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRowqwWiT0pIuKHVM2K-lkPjznCv9gj0t9ZP0mYC0Yj_eKMH_i1bcwPgkEp7d-DmyyIjdw';" />
+        <small>Source: tech.co</small>
+                    <p>Schedule a demo today.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Vehicle Routing Software Problem How To Effectively Solve Solving Enterprise System Location Based Service" src="https://i.pinimg.com/originals/12/f1/8d/12f18d9b35c58130f42d75f2728dc84d.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk4wxMwH9Wr9VLKHcG6Tw_JHVzfmeo8FTRvgeyCXsygp2KsxTTAQonsVGrOlbyaCYdVCs';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Exactly what youd expect in pool service software designed for modern pool professionals.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pool Cleaning Software Service Autopilot" src="https://3wc18qadr1v1ajrha1s6y27r-wpengine.netdna-ssl.com/wp-content/uploads/2020/09/ezgif.com-video-to-gif-7.gif" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSde3F2HyelpGr0mtmglTtAHq6wtP44cu7J8-I2Puyy2SoAhAg7fROoW63Mrz-JuWRRtzU';" />
+        <small>Source: www.serviceautopilot.com</small>
+                    <p>Skimmer is pool service software for modern pool professionals.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Best Pool Service Software 2021 Reviews Of The Most Popular Tools Systems" src="https://gdm-catalog-fmapi-prod.imgix.net/ProductLogo/b5fcb9a6-6d7f-490e-ae19-79c01420d0e4.jpeg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUs0zxbqJb88pE8yGYv05YtbQoxoypxS4krVoZ-G5H9oV9t4CdVSD_TFyqL6DPn03rqbs';" />
+        <small>Source: www.capterra.com</small>
+                    <p>Schedule and Route Pool Spa Service Jobs.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Top 10 Best Pool Service Software Providers 2021 Tech Co" src="https://images.tech.co/wp-content/uploads/2018/09/24125307/pooltrac-chem-calculator-pro-640x400.jpeg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMHxk0MGtaqZASLEymJx0CBIUK2ApH_RfBpplCF_pUeh-DenWMmhsv1e9upM3VA-ezu5g';" />
+        <small>Source: tech.co</small>
+                    <p>1-Click find the 5 closet pools for the most optimal routes.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Digital System Provides Solution For Solutions Segmentation Understanding" src="https://i.pinimg.com/originals/02/5c/fa/025cfa5f8f68ee46d11ce8dac55bc440.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT17c3oRi1nwdXjdh9q3ojj77J-_3fLu-RKf7ydiJWqXyc3B_QOrd4ociWMTmYS_VTwoHQ';" />
+        <small>Source: in.pinterest.com</small>
+                    <p>The software features all the reporting tools you need to run your pool service company efficiently.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Management Software Is One That Can Address Different Scenarios By Providing The Best Response To Different Situations H Business Software Management Software" src="https://i.pinimg.com/originals/4c/f8/17/4cf8172f4b73b1d158530f47ff72360e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBIewI4drkuUxs7pJoQ5HrqnOnX8Ig7Y-W82XREn-tfZ4JKzK4XQG_iDlZNEXXzr70VBk';" />
+        <small>Source: in.pinterest.com</small>
+                    <p>Routely was specifically created as a Pool Service management software to help run my own pool company Master Touch Pools.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Multi Region N Tier Application For High Availability Azure Reference Architectures Microsoft Doc Cloud Computing Technology Azure Cloud Computing Services" src="https://i.pinimg.com/736x/65/be/16/65be16341e339952b0412cd3760ee692.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDxezniwcfy1oRWcfiH8MQk5CkX4oZY5r8vaZUUbb0hbUCHL2ElBgKHmAhjPq2jMlXjL8';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Start your 14-days FREE trial now.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Best Pool Service Software 2021 Reviews Of The Most Popular Tools Systems" src="https://gdm-catalog-fmapi-prod.imgix.net/ProductLogo/8280719f-9376-49b1-b85e-fd6eaae0a83d.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvTNiKowrtfxb40AAx35ry3W94ifKPvqa59yAtH0bblo8n77d1Sb-fLwtg7XJhdcN_8tc';" />
+        <small>Source: www.capterra.com</small>
+                    <p>HydroScribe is complete business management software built from the ground up by business professionals to help you manage and grow your pool business.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/shark-picture-hd.html"><i>&larr; shark picture hd</i></a>
+                                                                    
+                                        <a href="/shark-picture-mouth-open.html"><i>shark picture mouth open &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <!-- Footer CSS JS -->            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>
